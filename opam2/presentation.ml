@@ -264,8 +264,6 @@ depends: "foo" { = _:version & os = "Linux" }
 * End-to-end signing (but wait for the 11:45 talk!)
 * Generation of software bundles
 * A `provides:` field
-|}+!{|
-* Performance ?
 |}) ::
 
   mframe ~title:"2.0 roadmap" ({|
