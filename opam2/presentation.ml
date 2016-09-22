@@ -25,13 +25,13 @@ let slides =
 <div style="text-align:center; height:100%;">
 Louis Gesbert, Anil Madhavapeddy<br>
 <br>
-<img src="images/logo.png" width="30%"><br>
+<img src="images/logo.png" style="height:3.6ex;vertical-align:middle;"/><br>
 
-<div style="font-size:140%;vertical-align:middle;"><img src="images/ocamllabs.png" style="width:2em;">OCaml Labs</div><br>
+<img src="images/ocamllabs.png" style="height:4ex;vertical-align:middle;"/><span style="font-size:140%;">OCaml Labs</span><br>
 
-<img src="images/janestreet.png" width="40%">
+<img src="images/janestreet.png" style="height:5ex;vertical-align:middle;"/>
 
-<div style="position:relative; bottom: 0;">
+<div style="position:fixed;bottom: 0;left: 0; right:0; text-align: center">
 OCaml Workshop 2016, Nara, Japan
 </div>
 </div>
@@ -46,6 +46,10 @@ OCaml Workshop 2016, Nara, Japan
 - In coordination with OCaml Labs
 - OCaml Package Repository maintained by the community
 - Lots of useful feedback and contributions from the community
+- Public repository available on github, <br>
+  licensed under LGPL 2.1 with linking exception
+
+<div style="margin-top:2ex;width:100%;text-align:center">https://opam.ocaml.org</div>
 |};
     mframe ~title:"Authors" {|
 <table>
@@ -74,12 +78,12 @@ OCaml Workshop 2016, Nara, Japan
 
 
   mframe ~title:"Some metrics" {|
-- Now more than 1300 packages available (>5500 including all versions)
+- Now more than 1300 packages available<br/>(>5500 including all versions)
 - 250k package installations per month
 
-<img class="fragment current-visible" data-fragment-index="1" src="images/unique-packages.png" style="position:fixed;bottom:0;"/>
-<img class="fragment current-visible" data-fragment-index="2" src="images/packages.png" style="position:fixed;bottom:0;"/>
-<img class="fragment current-visible" data-fragment-index="3" src="images/contributors.png" style="position:fixed;bottom:0;"/>
+<img class="fragment current-visible" data-fragment-index="0" src="images/unique-packages.png" style="position:fixed;bottom:0;margin:auto;left:0;right:0;"/>
+<img class="fragment current-visible" data-fragment-index="1" src="images/packages.png" style="position:fixed;bottom:0;margin:auto;left:0;right:0;"/>
+<img class="fragment current-visible" data-fragment-index="2" src="images/contributors.png" style="position:fixed;bottom:0;margin:auto;left:0;right:0;"/>
 
 |} ::
 
@@ -88,6 +92,7 @@ OCaml Workshop 2016, Nara, Japan
 |}+!{|
 - Feedback was extremely good
 - Now adopted at scale, but
+|}+!{|
 - Some areas are not flexible enough for some advanced and industrial workflows
 - Pinning at scale ?
 - Not colorful enough
@@ -96,7 +101,7 @@ OCaml Workshop 2016, Nara, Japan
 |}) ::
 
   mframe ~title:"Preview release" ({|
-Preview release of **opam 2.0** is already available:
+Preview release of **opam 2.0** is available:
 
 <div style="margin-left:2em;">https://opam.ocaml.org/blog/opam-2-0-preview</div>
 
@@ -289,20 +294,30 @@ opam install myproject --inplace-build
 
 Once we have a clear story and feedback, we'll make this shorter!
 |} ::
-/*
+(*
   mframe ~title:"Defining workflows: Docker builds"
     {|
 
 |} ::
-*/
+*)
   mframe ~title:"Auxiliary tools" {|
 * opam-publish
 * opam-user-setup
+* opam-manager
 * Camelus (opam-bot)
 * opam weather service (http://ows.irill.org)
 * http://bench.flambda.ocamlpro.com/
 |} ::
 
+(*
+  mframe ~title:"Odoc" {|
+...
+|} ::
+
+  mframe ~title:"Other ?" {|
+...
+|} ::
+*)
   []
 
 (* Configuration *)
