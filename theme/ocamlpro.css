@@ -94,6 +94,8 @@ body {
  *********************************************/
 .reveal p {
   line-height: 1.3;
+  width: 100%;
+  text-align: left;
 }
 
 .reveal section > p {
